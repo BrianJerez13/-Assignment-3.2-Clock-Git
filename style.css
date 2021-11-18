@@ -1,0 +1,41 @@
+.clockDiv{
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  border: 2px solid grey;
+
+}
+
+.clock{
+  position: relative;
+  width: 600px;
+  height: 600px;
+
+}
+.hand_big{
+  position: absolute;
+  top: 250px;
+  left:300px;
+  width: 213px;
+  height: 106px;
+  animation: mymove 10s;
+  transform-origin: 0% 50%;
+}
+.hand_small{
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 250px;
+  left:300px;
+  width: 213px;
+  height: 106px;
+  animation: mymove1 10s;
+  transform-origin: 0% 50%;
+}
+
+@keyframes mymove{
+  50% {transform: rotate(30deg);}
+}
+@keyframes mymove1{
+  50% {transform: rotate(270deg);}
+}
